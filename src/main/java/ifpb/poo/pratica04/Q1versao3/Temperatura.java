@@ -64,14 +64,14 @@ public class Temperatura {
     }
 
     private char charEscala () {
-        return Character.toUpperCase(this.escala.charAt(0));
+        return Character.toUpperCase(getEscala().charAt(0));
     }
     private char charEscalaRequerida () {
-        return Character.toUpperCase(this.escala.charAt(0));
+        return Character.toUpperCase(getEscalaRequerida().charAt(0));
     }
 
     public String toString() {
-        return "A temperatura inserida foi de: " + temperatura + " " + escala
-        + "\nA temperatura convertida é: " + String.format("%.2f", converterTemperatura()) + " " + escalaRequerida;
+        return "A temperatura inserida foi de: " + temperatura + " " + charEscala()
+        + "\nA temperatura convertida é: " + String.format("%.2f", converterTemperatura()) + " " + charEscalaRequerida();
     }
 }

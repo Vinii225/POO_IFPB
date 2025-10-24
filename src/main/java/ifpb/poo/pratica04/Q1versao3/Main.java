@@ -27,8 +27,6 @@ public class Main {
         escalaRequerida = keyboard.next();
         temp1.setEscalaRequerida(escalaRequerida);
 
-        System.out.println("Dados: " + temp1.getTemperatura() + " " + temp1.getEscala() + ", conversão para: " + temp1.getEscalaRequerida());
-
         System.out.println(temp1);
         
         keyboard.close();
