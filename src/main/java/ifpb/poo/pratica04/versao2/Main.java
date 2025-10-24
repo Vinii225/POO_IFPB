@@ -1,4 +1,4 @@
-package ifpb.poo.versao2;
+package ifpb.poo.pratica04.versao2;
 
 import java.util.Scanner;
 import java.util.Locale;
@@ -10,7 +10,7 @@ public class Main {
 
         double temperatura;
         char escala;
-        char escala_requerida;
+        char escalaRequerida;
 
         Temperatura temp1 = new Temperatura();
     
@@ -24,8 +24,8 @@ public class Main {
         temp1.setEscala(escala);
 
         System.out.println("Digite a escala da temperatura que quer converter: ");
-        escala_requerida = keyboard.next().charAt(0);
-        temp1.setEscalaRequerida(escala_requerida);
+        escalaRequerida = keyboard.next().charAt(0);
+        temp1.setEscalaRequerida(escalaRequerida);
 
         System.out.println("Dados: " + temp1.getTemperatura() + " " + temp1.getEscala() + ", conversão para: " + temp1.getEscalaRequerida());
 

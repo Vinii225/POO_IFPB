@@ -1,10 +1,10 @@
-package ifpb.poo.versao2;
+package ifpb.poo.pratica04.versao2;
 
 public class Temperatura {
 
     private double temperatura;
     private char escala;
-    private char escala_requerida;
+    private char escalaRequerida;
 
 
     // INFO: Getters
@@ -15,7 +15,7 @@ public class Temperatura {
         return this.escala;
     }
     public char getEscalaRequerida() {
-        return this.escala_requerida;
+        return this.escalaRequerida;
     }
 
     // INFO: Setters
@@ -26,26 +26,26 @@ public class Temperatura {
         this.escala = Character.toUpperCase(escala);
     }
     public void setEscalaRequerida(char escalaRequerida){
-        this.escala_requerida = Character.toUpperCase(escalaRequerida);
+        this.escalaRequerida = Character.toUpperCase(escalaRequerida);
     } 
 
     public double ConverterTemperatura() {
         // INFO: Celsius para Farenheit ou Kelvin
-        if (escala == 'C' && escala_requerida == 'F') {
+        if (escala == 'C' && escalaRequerida == 'F') {
             return (temperatura * 9.0 / 5.0) + 32;
-        } else if (escala == 'C' && escala_requerida == 'K'){
+        } else if (escala == 'C' && escalaRequerida == 'K'){
                 return temperatura + 273.15;
 
         // INFO: Fahrenheit para Celsius ou Kelvin
-        } else if (escala == 'F' && escala_requerida == 'C') {
+        } else if (escala == 'F' && escalaRequerida == 'C') {
             return (temperatura - 32.0) / 1.8;
-        } else if (escala == 'F' && escala_requerida == 'K') {
+        } else if (escala == 'F' && escalaRequerida == 'K') {
             return (temperatura - 32.0) * 5.0/9.0 + 273.15;
 
         // INFO: Kelvin para Celsius ou Fahrenheit
-        } else if (escala == 'K' && escala_requerida == 'C') {
+        } else if (escala == 'K' && escalaRequerida == 'C') {
             return temperatura - 273.15;
-        } else if (escala == 'K' && escala_requerida == 'F') {
+        } else if (escala == 'K' && escalaRequerida == 'F') {
             return (temperatura - 273.15) * 1.8 + 32;
         } else {
             return temperatura;
@@ -54,6 +54,6 @@ public class Temperatura {
 
     public String toString() {
         return "A temperatura inserida foi de: " + temperatura + " " + escala
-        + "\nA temperatura convertida é: " + String.format("%.2f", ConverterTemperatura()) + " " + escala_requerida;
+        + "\nA temperatura convertida é: " + String.format("%.2f", ConverterTemperatura()) + " " + escalaRequerida;
     }
 }

@@ -1,4 +1,4 @@
-package ifpb.poo.versao1;
+package ifpb.poo.pratica04.versao1;
 
 import java.util.Scanner;
 
