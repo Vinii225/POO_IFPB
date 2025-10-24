@@ -1,4 +1,4 @@
-package ifpb.poo.pratica04.versao2;
+package ifpb.poo.pratica04.Q1versao2;
 
 public class Temperatura {
 
