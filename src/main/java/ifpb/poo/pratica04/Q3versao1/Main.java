@@ -1,10 +1,9 @@
 package ifpb.poo.pratica04.Q3versao1;
 
 import java.util.Scanner;
+import java.util.Locale;
 
 import ifpb.poo.pratica04.Q3versao1.Entitties.Computador;
-
-import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) { 
@@ -18,7 +17,6 @@ public class Main {
 
         System.out.println(comp1);
 
- 
         keyboard.close();
     }
 }
